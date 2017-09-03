@@ -3,7 +3,7 @@ module.exports = {
     getCodeAndNameAndType: function (locations, index) {
 
         var code, name, type;
-        code =  name =  type = "";
+        code =  name =  type = "-";
 
         if (index > -1) {
 
