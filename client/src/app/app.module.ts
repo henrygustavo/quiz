@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DepartamentoComponent } from './components/departamento/departamento.component';
 import { ProvinciaComponent } from './components/provincia/provincia.component';
 import { DistritoComponent } from './components/distrito/distrito.component';
+import { TableComponent } from './shared/table.component';
 
 import { ApiService } from  './shared/api.service';
 
@@ -24,7 +25,8 @@ import { ApiService } from  './shared/api.service';
         HomeComponent,
         DepartamentoComponent,
         ProvinciaComponent,
-        DistritoComponent
+        DistritoComponent,
+        TableComponent
     ],
     bootstrap: [AppComponent],
     providers: [ ApiService]

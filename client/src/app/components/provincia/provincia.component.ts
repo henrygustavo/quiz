@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '../../model/location';
 import { ApiService } from "../../shared/api.service";
 
 @Component({
@@ -7,6 +8,8 @@ import { ApiService } from "../../shared/api.service";
 })
 export class ProvinciaComponent implements OnInit {
 
+    public locations : Location[];
+
     constructor(private _apiService: ApiService) {
      
 
@@ -14,12 +17,13 @@ export class ProvinciaComponent implements OnInit {
 
     ngOnInit() {
       
-        this._apiService.getProvincias().subscribe(
-            
-                        data => { console.log(data); },
-                        error => { console.log("error");}
-                       
-                    );
+        this._apiService .getProvincias()
+        .subscribe(locations => {
+            this.locations = locations
+        }, error => {
+            alert(error)
+        });
+
 
     }
 }
