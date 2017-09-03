@@ -5,7 +5,7 @@ module.exports = {
         var code, name, type;
         code =  name =  type = "";
 
-        if (index > 0) {
+        if (index > -1) {
 
             const location = locations[index];
 
