@@ -15,7 +15,7 @@ module.exports = {
     },
     output: {
         path: root("dist"),
-        filename: '[name].js'
+        filename: 'assets/js/[name].js'
     },
     devtool: "cheap-module-eval-source-map",
     module: {
