@@ -15,7 +15,7 @@ export class DistritoComponent implements OnInit {
 
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
         
         this._apiService .getDistritos()
         .subscribe(locations => {

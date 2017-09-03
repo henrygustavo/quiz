@@ -15,7 +15,7 @@ export class ProvinciaComponent implements OnInit {
 
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
       
         this._apiService .getProvincias()
         .subscribe(locations => {
